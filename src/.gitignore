@@ -1,2 +1,7 @@
 .env
 venv
+
+# Vault key (never commit)
+memory/vault/.vault_key
+memory/vault/secrets.enc
+memory/vector/chroma/
