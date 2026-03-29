@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./src
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app
+    restart: always
+
+  frontend:
+    build: ./ui
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./ui:/app
+    depends_on:
+      - backend
+    restart: always
