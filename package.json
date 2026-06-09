@@ -1,0 +1,12 @@
+{
+  "name": "evil-agent",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": ["client"],
+  "scripts": {
+    "dev:harness": "cd harness && bun run src/index.ts",
+    "dev:client": "cd client && npm run dev",
+    "build:harness": "cd harness && bun build src/index.ts --outdir dist --target bun",
+    "build:client": "cd client && npm run build"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "evil-agent-harness",
+  "version": "0.1.0",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^1.0.0",
+    "@anthropic-ai/sdk": "^0.53.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@nut-tree-fork/nut-js": "^4.2.6",
+    "ai": "^4.0.0",
+    "fast-glob": "^3.3.0",
+    "hono": "^4.6.0",
+    "open": "^10.1.0",
+    "openai": "^6.42.0",
+    "screenshot-desktop": "^1.15.0",
+    "zod": "^3.23.0"
+  }
+}
